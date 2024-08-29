@@ -1,4 +1,4 @@
-## Dataset
+## Dataset handle
 
 We utilized the Amazon Reviews 5-score dataset. 
 To download the Amazon dataset, you can use the following link: [Amazon Reviews](http://jmcauley.ucsd.edu/data/amazon/links.html).
@@ -24,7 +24,7 @@ python entry.py --process_data_mid 1 --process_data_ready 1
         ├── _2_8
         ├── _5_5
         └── _8_2
-model run 
+## model run 
 ```
 python entry_self_capsule_want_ablation.py --task 1 --ratio [0.8,0.2] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
 python entry_self_capsule_want_ablation.py --task 1 --ratio [0.5,0.5] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
