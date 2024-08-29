@@ -11,6 +11,8 @@ The final data will be under `./data/ready`.
 ```python
 python entry.py --process_data_mid 1 --process_data_ready 1
 ```
+```
+
 └── data
     ├── mid                 # Mid data
     │   ├── Books.csv
@@ -24,6 +26,7 @@ python entry.py --process_data_mid 1 --process_data_ready 1
         ├── _2_8
         ├── _5_5
         └── _8_2
+```        
 ## model run 
 ```
 python entry_self_capsule_want_ablation.py --task 1 --ratio [0.8,0.2] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
