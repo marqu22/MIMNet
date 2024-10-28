@@ -1,5 +1,5 @@
-# MIMNet: Multi-Interest Meta Network with Multi-Granularity
- Target-Guided Attention for Cross-domain Recommendation
+# MIMNet: Multi-Interest Meta Network with Multi-Granularity Target-Guided Attention for Cross-domain Recommendation
+#
 
 ## Dataset
 
