@@ -1,3 +1,6 @@
+# MIMNet: Multi-Interest Meta Network with Multi-Granularity
+ Target-Guided Attention for Cross-domain Recommendation
+
 ## Dataset
 
 The Amazon datasets we used: 
