@@ -1,13 +1,13 @@
-## Dataset handle
+## Dataset
 
-We utilized the Amazon Reviews 5-score dataset. 
-To download the Amazon dataset, you can use the following link: [Amazon Reviews](http://jmcauley.ucsd.edu/data/amazon/links.html).
-Download the three domains: [CDs and Vinyl](http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_CDs_and_Vinyl_5.json.gz), [Movies and TV](http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json.gz), [Books](http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Books_5.json.gz) (5-scores), and then put the data in `./data/raw`.
+The Amazon datasets we used: 
+1. CDs and Vinyl: http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_CDs_and_Vinyl_5.json.gz
+2. Movies and TV: http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json.gz  
+3. Books: http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Books_5.json.gz
 
-You can use the following command to preprocess the dataset. 
-The two-phase data preprocessing includes parsing the raw data and segmenting the mid data. 
-The final data will be under `./data/ready`.
+Put the data files in `./data/raw`.
 
+Data process via:
 ```python
 python entry.py --process_data_mid 1 --process_data_ready 1
 ```
@@ -51,3 +51,20 @@ python entry_self_capsule_want_ablation.py --task 3 --ratio [0.8,0.2] --epoch 10
 python entry_self_capsule_want_ablation.py --task 3 --ratio [0.5,0.5] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
 python entry_self_capsule_want_ablation.py --task 3 --ratio [0.2,0.8] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
 ```
+## cite
+[CMF] Ajit P Singh and Geoffrey J Gordon. 2008. Relational learning via collective matrix factorization. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. 650–658.
+
+
+[EMCDR] Tong Man, Huawei Shen, Xiaolong Jin, and Xueqi Cheng. 2017. Cross-domain recommendation: An embedding and mapping approach.. In IJCAI, Vol. 17. 2464–2470.
+
+
+[PTUPCDR] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized transfer of user preferences for cross-domain recommendation. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining. 1507–1515
+
+
+[SSCDR] SeongKu Kang, Junyoung Hwang, Dongha Lee, and Hwanjo Yu. 2019. Semi-supervised learning for cross-domain recommendation to cold-start users. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management. 1563–1572.
+
+
+[LACDR] Tianxin Wang, Fuzhen Zhuang, Zhiqiang Zhang, Daixin Wang, Jun Zhou, and Qing He. 2021. Low-Dimensional Alignment for Cross-Domain Recommendation. Association for Computing Machinery, New York, NY, USA, 3508–3512. 
+
+
+More hyper-parameter settings can be made in `./code/config_final.json`.
