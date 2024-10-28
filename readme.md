@@ -64,7 +64,7 @@ python entry_self_capsule_want_ablation.py --task 3 --ratio [0.2,0.8] --epoch 10
 [SSCDR] SeongKu Kang, Junyoung Hwang, Dongha Lee, and Hwanjo Yu. 2019. Semi-supervised learning for cross-domain recommendation to cold-start users. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management. 1563–1572.
 
 
-[LACDR] Tianxin Wang, Fuzhen Zhuang, Zhiqiang Zhang, Daixin Wang, Jun Zhou, and Qing He. 2021. Low-Dimensional Alignment for Cross-Domain Recommendation. Association for Computing Machinery, New York, NY, USA, 3508–3512. 
+[CVPM] Zhao, Chuang, et al. "Cross-domain Transfer of Valence Preferences via a Meta-optimization Approach." arXiv preprint arXiv:2406.16494 (2024).
 
 
 More hyper-parameter settings can be made in `./code/config_final.json`.
