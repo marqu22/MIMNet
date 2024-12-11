@@ -54,7 +54,7 @@ python entry_self_capsule_want_ablation.py --task 3 --ratio [0.8,0.2] --epoch 10
 python entry_self_capsule_want_ablation.py --task 3 --ratio [0.5,0.5] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
 python entry_self_capsule_want_ablation.py --task 3 --ratio [0.2,0.8] --epoch 10 --lr 0.01 --interest_num 7 --prot_K 100 --base_model MF --seed 2020  
 ```
-## cite
+## core cite
 [CMF] Ajit P Singh and Geoffrey J Gordon. 2008. Relational learning via collective matrix factorization. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. 650–658.
 
 
